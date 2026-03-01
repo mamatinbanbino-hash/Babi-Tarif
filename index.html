@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babi-Tarif | Frais & Météo CI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="bg-blue-600 p-4 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold italic">🇨🇮 BABI-TARIF</h1>
+            <span id="temp" class="text-sm font-bold bg-blue-700 px-3 py-1 rounded-full text-blue-100">--°C</span>
+        </div>
+    </nav>
+
+    <main class="max-w-md mx-auto p-6">
+        
+        <div id="alerteMeteo"></div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-6">
+            <h2 class="font-bold mb-4 text-blue-600 flex items-center gap-2">
+                <i class="fas fa-money-bill-wave"></i> Comparateur de Frais
+            </h2>
+            <div class="relative">
+                <input type="number" id="montant" placeholder="Montant à envoyer..." 
+                       class="w-full text-xl font-bold p-4 bg-slate-100 rounded-xl outline-none border-2 border-transparent focus:border-blue-500 transition mb-4">
+                <span class="absolute right-4 top-4 text-slate-400 font-bold">FCFA</span>
+            </div>
+            
+            <button onclick="calculer()" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 shadow-md transition transform active:scale-95">
+                Calculer les frais
+            </button>
+        </div>
+
+        <div id="resultats" class="space-y-3 hidden"></div>
+
+        <div class="mt-10 p-5 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl text-white shadow-lg">
+            <p class="text-[10px] uppercase font-black opacity-80 tracking-widest">SÉCURITÉ NUMÉRIQUE</p>
+            <h3 class="font-bold text-lg leading-tight mt-1">Protégez vos comptes Wave & Orange</h3>
+            <p class="text-xs mt-2 opacity-90">Guide complet disponible pour seulement 2 000 FCFA.</p>
+            <a href="#" class="inline-block mt-4 bg-white text-emerald-600 px-6 py-2 rounded-lg font-bold text-sm">Acheter sur Chariow</a>
+        </div>
+        
+        <p class="text-center text-[10px] text-slate-400 mt-10 uppercase tracking-tighter">Édition Service Public - 1ère A2 Abidjan</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
