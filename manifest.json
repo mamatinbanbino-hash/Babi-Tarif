@@ -1,0 +1,15 @@
+{
+  "name": "Babi-Tarif",
+  "short_name": "BabiTarif",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2563eb",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
